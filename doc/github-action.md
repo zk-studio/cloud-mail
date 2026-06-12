@@ -13,8 +13,8 @@
 | `CLOUDFLARE_ACCOUNT_ID` |  ✅  | Cloudflare 账户 ID                                    |
 | `D1_DATABASE_ID`        |  ✅  | 您的 D1 数据库的 ID                                     |
 | `KV_NAMESPACE_ID`       |  ✅  | 您的 KV 命名空间的 ID                                   |
-| `R2_BUCKET_NAME`        |  ✅  | 您的 R2 存储桶的名称                                    |
-| `DOMAIN`                |  ✅  | 您要用于邮件服务的域名（例如 `["xx.xx"]，多域名用,分隔`）        |
+| `R2_BUCKET_NAME`        |  ❌  | 您的 R2 存储桶的名称（可选。如不配置，附件将自动保存在 KV 数据库中）  |
+| `DOMAIN`                |  ✅  | 您要用于邮件服务的域名（必须为 JSON 数组格式，多域名例如 `["domain1.com", "domain2.com"]`） |
 | `ADMIN`                 |  ✅  | 您的管理员邮箱地址（例如 `admin@example.com`）      |
 | `JWT_SECRET`            |  ✅  | 用于生成和验证 JWT 的随机长字符串                     |
 | `INIT_URL`              |  ❌  | （可选）部署后用于初始化数据库的 Worker URL（格式参考下述手动初始化）           |
